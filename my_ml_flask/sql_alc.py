@@ -4,7 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 from sklearn.externals import joblib
 
-filename = '/Users/Vera/Downloads/final_logreg_model.sav'
+filename = 'final_logreg_model.sav'
 
 loaded_model = joblib.load(filename)
 
