@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 16 00:31:49 2020
 
-@author: Vera
-"""
 
 import pandas as pd
 from sqlalchemy import create_engine
@@ -15,7 +9,7 @@ filename = '/Users/Vera/Downloads/final_logreg_model.sav'
 loaded_model = joblib.load(filename)
 
 
-engine = create_engine('sqlite:////Users/Vera/Documents/my_ml_flask/appdata.sqlite')
+engine = create_engine('sqlite:////appdata.sqlite')
 
 
 
