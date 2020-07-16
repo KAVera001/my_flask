@@ -1,0 +1,33 @@
+
+
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container-fluid">
+  <form action="{{ url_for('info') }}" method="post">
+    {{ form.csrf_token }}
+    <h3>Enter session_id and parameter to see result</h3>
+    <div class="row">
+        <div class="col">
+          {{ form.title.label }}
+        </div>
+        <div class="col">
+         {{ form.title_p.label }}
+        </div>
+    </div>
+    <div class="row">
+      <p>
+        <div class="col">
+          {{ form.title(class="form-control") }}
+        </div>
+        <div class="col">
+          {{ form.title_p(class="form-control") }}
+        </div>
+        <div class="col">
+          {{ form.submit(class="btn btn-primary") }}
+        </div>
+      </p>
+    </div>
+  </form>
+</div>
+{% endblock %}
